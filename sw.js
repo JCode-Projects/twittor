@@ -8,7 +8,7 @@ const INMUTABLE_CACHE_NAME = 'inmutable-v1';
 
 // TODO - Crear un array con las rutas de los archivos para el app shell (STATIC CACHE)
 const APP_SHELL = [
-    '/',
+    // '/',
     '/index.html',
     '/css/style.css',
     '/img/favicon.ico',
