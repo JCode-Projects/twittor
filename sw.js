@@ -9,16 +9,16 @@ const INMUTABLE_CACHE_NAME = 'inmutable-v1';
 // TODO - Crear un array con las rutas de los archivos para el app shell (STATIC CACHE)
 const APP_SHELL = [
     // '/',
-    '/index.html',
-    '/css/style.css',
-    '/img/favicon.ico',
-    '/img/avatars/hulk.jpg',
-    '/img/avatars/ironman.jpg',
-    '/img/avatars/spiderman.jpg',
-    '/img/avatars/thor.jpg',
-    '/img/avatars/wolverine.jpg',
-    '/js/app.js',
-    '/js/sw-utils.js'
+    'index.html',
+    'css/style.css',
+    'img/favicon.ico',
+    'img/avatars/hulk.jpg',
+    'img/avatars/ironman.jpg',
+    'img/avatars/spiderman.jpg',
+    'img/avatars/thor.jpg',
+    'img/avatars/wolverine.jpg',
+    'js/app.js',
+    'js/sw-utils.js'
 ];
 
 // TODO - Crear un array con las rutas de los archivos para el app shell inmutable (INMUTABLE CACHE)
