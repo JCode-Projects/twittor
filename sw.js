@@ -2,7 +2,7 @@
 importScripts('js/sw-utils.js');
 
 // TODO - Crear variables para manejar el nombre del caché: STATIC, DINAMIC, INMUTABLE
-const STATIC_CACHE_NAME = 'static-v1';
+const STATIC_CACHE_NAME = 'static-v2';
 const DINAMIC_CACHE_NAME = 'dynamic-v1';
 const INMUTABLE_CACHE_NAME = 'inmutable-v1';
 
