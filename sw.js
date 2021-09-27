@@ -2,8 +2,8 @@
 importScripts('js/sw-utils.js');
 
 // TODO - Crear variables para manejar el nombre del caché: STATIC, DINAMIC, INMUTABLE
-const STATIC_CACHE_NAME = 'static-v2';
-const DINAMIC_CACHE_NAME = 'dynamic-v1';
+const STATIC_CACHE_NAME = 'static-v3';
+const DINAMIC_CACHE_NAME = 'dynamic-v2';
 const INMUTABLE_CACHE_NAME = 'inmutable-v1';
 
 // TODO - Crear un array con las rutas de los archivos para el app shell (STATIC CACHE)
@@ -47,6 +47,10 @@ self.addEventListener('activate', e => {
         .then(keys => {
             keys.forEach(key => {
                 if(key !== STATIC_CACHE_NAME && key.includes('static')) {
+                    return caches.delete(key);
+                }
+                
+                if(key !== DINAMIC_CACHE_NAME && key.includes('dynamic')) {
                     return caches.delete(key);
                 }
             });
